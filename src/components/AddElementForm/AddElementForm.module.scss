@@ -1,0 +1,47 @@
+.priority__markers:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.red::after {
+	background-color: red;
+}
+
+.pink::after {
+	background-color: pink;
+}
+
+.purple::after {
+	background-color: purple;
+}
+
+.grey::after {
+	background-color: grey;
+}
+
+.priority__markers:after .red {
+	background-color: red;
+}
+
+.priority__markers:after .red:after {
+	background-color: red;
+}
+
+.priority__markers .red {
+	background-color: red;
+}
+
+.priority__markers::after + .pink {
+	background-color: pink;
+}
+
+.priority__markers::after + .purple {
+	background-color: purple;
+}
+
+.priority__markers::after + .grey {
+	background-color: grey;
+}
